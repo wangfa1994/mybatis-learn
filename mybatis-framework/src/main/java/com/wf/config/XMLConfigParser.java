@@ -16,6 +16,17 @@ public class XMLConfigParser {
     private ConfigurationContext configurationContext;
 
 
+    public XMLConfigParser() {
+        this.configurationContext = new ConfigurationContext();
+    }
+
+    public  ConfigurationContext parse(Element rootElement){
+        parseEnvironments(rootElement.element("environments"));
+        parseMappers(rootElement.element("mappers"));
+        return configurationContext;
+    }
+
+
     /**
      *  解析环境变量
      * @param environments

@@ -30,6 +30,12 @@
       <artifactId>mybatis-framework</artifactId>
       <version>1.0-SNAPSHOT</version>
     </dependency>
+    <!-- MySql 5.5 Connector -->
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>8.0.20</version>
+    </dependency>
   </dependencies>
 
   <build>

@@ -27,12 +27,11 @@ public class XMLMapperParse {
         // 获取所有的select标签, 可以使用呢xpath进行通配
         List<Element> selectElementList = rootElement.elements("select");
 
-        // 解析对应的crud脚本
-        XMLScriptParse scriptParse = new XMLScriptParse(configurationContext);
+        // 用来解析对应的select/update/create/delete标签,一个标签就是一个Statement
+        XMLStatementParser statementParser = new XMLStatementParser(configurationContext);
 
         for (Element element : selectElementList) {
-            scriptParse.parseScript(element);
-
+            statementParser.parseStatement(element,namespace);
         }
 
 
