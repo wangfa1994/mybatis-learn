@@ -1,7 +1,7 @@
 package com.wf.config;
 
 /**
- * @Desc : 每一个crud标签都是一个Statement
+ * @Desc : 每一个crud标签都是一个MappedStatement
  * @Author : Mr.WangF
  * @Date: 2021/3/7 13:29
  */
@@ -25,6 +25,46 @@ public class MappedStatement {
         this.parameterType = parameterType;
         this.resultType = resultType;
         this.statementType = statementType;
+        this.sqlSource = sqlSource;
+    }
+
+    public String getStatementId() {
+        return statementId;
+    }
+
+    public void setStatementId(String statementId) {
+        this.statementId = statementId;
+    }
+
+    public Class<?> getParameterType() {
+        return parameterType;
+    }
+
+    public void setParameterType(Class<?> parameterType) {
+        this.parameterType = parameterType;
+    }
+
+    public Class<?> getResultType() {
+        return resultType;
+    }
+
+    public void setResultType(Class<?> resultType) {
+        this.resultType = resultType;
+    }
+
+    public String getStatementType() {
+        return statementType;
+    }
+
+    public void setStatementType(String statementType) {
+        this.statementType = statementType;
+    }
+
+    public SqlSource getSqlSource() {
+        return sqlSource;
+    }
+
+    public void setSqlSource(SqlSource sqlSource) {
         this.sqlSource = sqlSource;
     }
 }

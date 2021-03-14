@@ -9,6 +9,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+  * @Desc:  mapper文件中，mysql的解析，生成对应的SQLSource
+  * @Author: Mr.WangF
+  * @Date: 2021/3/14 15:40
+  */
 public class XMLScriptParse {
 
 
@@ -49,12 +54,12 @@ public class XMLScriptParse {
             sqlSource = new RawSqlSource(rootSqlNode);
         }
 
-
+        // 由于带有#{}和${}、动态标签的sql处理方式不同，所以需要封装到不同的SqlSource中
         return sqlSource;
     }
 
     /**
-     * 解析字标签
+     * 解析子标签
      *
      * @param element
      * @return

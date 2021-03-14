@@ -3,7 +3,7 @@ package com.wf.config;
 import com.wf.util.OgnlUtils;
 
 /**
- * @Desc :
+ * @Desc : 专门用来解析if标签的SqlNode
  * @Author : Mr.WangF
  * @Date: 2021/3/7 16:00
  */
@@ -19,6 +19,7 @@ public class IfSqlNode implements SqlNode{
         this.test = test;
         this.rootSqlNode = rootSqlNode;
     }
+
 
     @Override
     public void apply(DynamicContext context) {

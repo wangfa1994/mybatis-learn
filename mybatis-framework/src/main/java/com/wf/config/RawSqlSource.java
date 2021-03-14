@@ -11,6 +11,7 @@ public class RawSqlSource implements SqlSource{
 
     public RawSqlSource(SqlNode sqlNode) {
         this.sqlNode = sqlNode;
+        // 在这里要先对sql节点进行解析
     }
 
     @Override

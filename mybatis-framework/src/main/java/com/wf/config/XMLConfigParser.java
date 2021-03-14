@@ -11,6 +11,11 @@ import java.io.InputStream;
 import java.util.List;
 import java.util.Properties;
 
+/**
+  * @Desc: 用来解析全局配置文件
+  * @Author: Mr.WangF
+  * @Date: 2021/3/14 15:39
+  */
 public class XMLConfigParser {
 
     private ConfigurationContext configurationContext;

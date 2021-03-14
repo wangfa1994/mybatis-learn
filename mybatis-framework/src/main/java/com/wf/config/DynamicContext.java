@@ -17,6 +17,7 @@ public class DynamicContext {
     // 参数
     private Map<String, Object> bindings = new HashMap<String, Object>();
 
+    // 为什么要指定key
     public DynamicContext(Object param) {
         bindings.put("_parameter", param);
     }

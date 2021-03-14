@@ -13,6 +13,9 @@ public class DynamicSqlSource implements SqlSource {
     this.sqlNode = sqlNode;
     }
 
+    /**
+     * sqlSession执行的时候，才会真正执行
+     */
     @Override
     public BoundSql getBoundSql() {
         return null;

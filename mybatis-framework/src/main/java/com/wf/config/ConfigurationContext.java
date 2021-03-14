@@ -5,8 +5,10 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- *
- */
+  * @Desc: mybatis的全局配置文件
+  * @Author: Mr.WangF
+  * @Date: 2021/3/14 15:26
+  */
 public class ConfigurationContext {
 
     /**
