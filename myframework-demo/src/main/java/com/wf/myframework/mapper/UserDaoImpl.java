@@ -1,6 +1,6 @@
-package com.wf.mapper;
+package com.wf.myframework.mapper;
 
-import com.wf.model.User;
+import com.wf.myframework.model.User;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

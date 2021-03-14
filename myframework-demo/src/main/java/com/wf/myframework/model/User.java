@@ -1,4 +1,4 @@
-package com.wf.model;
+package com.wf.myframework.model;
 
 import java.util.Date;
 

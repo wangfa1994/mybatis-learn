@@ -25,9 +25,10 @@ public class JDBCDemo {
         ResultSet rs = null;
 
         try{
-            Class.forName("com.mysql.jdbc.Driver"); //建立驱动
-            // oracle为oracle.jdbc.driver.OracleDriver
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/test?serverTimezone=UTC","root","123456");//建立连接
+            //建立驱动
+            Class.forName("com.mysql.jdbc.Driver");
+            //建立连接 oracle为oracle.jdbc.driver.OracleDriver
+            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/test?serverTimezone=UTC","root","123456");
             //oracle为jdbc:oracle:thin:@192.168.2.101:1521:studemo
             stmt = conn.createStatement();//创建语句
 

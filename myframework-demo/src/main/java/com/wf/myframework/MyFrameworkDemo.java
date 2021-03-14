@@ -1,4 +1,4 @@
-package com.wf;
+package com.wf.myframework;
 
 import com.wf.config.ConfigurationContext;
 import com.wf.config.XMLConfigParser;
@@ -8,12 +8,12 @@ import org.dom4j.Document;
 
 import java.io.InputStream;
 
-public class MybatisDemo {
+public class MyFrameworkDemo {
 
     public static void main(String[] args) {
 
         // 指定全局配置文件路径
-        String resource = "SqlMapConfig.xml";
+        String resource = "myframework/SqlMapConfig.xml";
         // 获取指定路径的IO流
         InputStream inputStream = ResourcesUtils.converResourceWithPath(resource);
         // 获取Document对象
